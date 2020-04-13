@@ -7,7 +7,7 @@ import pages.FacebookLoginPage;
 
 public class FacebookLoginTestPass extends TestBase {
 
-	@Test
+	@Test(groups={"pass"})
 	public void init() throws Exception {
 		// driver.get("https://www.gmail.com");
 		FacebookLoginPage loginpage = PageFactory.initElements(driver, FacebookLoginPage.class);

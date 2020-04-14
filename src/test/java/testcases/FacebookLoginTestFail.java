@@ -11,7 +11,6 @@ public class FacebookLoginTestFail extends TestBase {
 	public void init() throws Exception {
 		// driver.get("https://www.gmail.com");
 		FacebookLoginPage loginpage = PageFactory.initElements(driver, FacebookLoginPage.class);
-		
 		loginpage.setFirstName("Anujam");
 		loginpage.setLastName("Mandal");
 		loginpage.setContactNumber("1234567890");

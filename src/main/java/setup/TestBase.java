@@ -15,7 +15,7 @@ public class TestBase {
 
 	public static WebDriver driver = null;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void initialize() throws IOException {
 
 		ChromeOptions options = new ChromeOptions();
@@ -40,7 +40,7 @@ public class TestBase {
 		driver.get("https://www.facebook.com");
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	// Test cleanup
 	public void TeardownTest() {
 		TestBase.driver.quit();

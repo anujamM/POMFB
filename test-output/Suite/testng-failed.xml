@@ -8,22 +8,23 @@
     <classes>
       <class name="testcases.FacebookLoginTestFail"/>
       <class name="testcases.FacebookLoginTestPass"/>
-      <class name="testcases.TestBase"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
-      <class name="testcases.FacebookLoginTestPass">
-        <methods>
-          <include name="init"/>
-        </methods>
-      </class> <!-- testcases.FacebookLoginTestPass -->
       <class name="testcases.FacebookLoginTestFail">
         <methods>
-          <include name="init"/>
           <include name="initialize"/>
+          <include name="init"/>
+          <include name="TeardownTest"/>
         </methods>
       </class> <!-- testcases.FacebookLoginTestFail -->
+      <class name="testcases.FacebookLoginTestPass">
+        <methods>
+          <include name="initialize"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- testcases.FacebookLoginTestPass -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

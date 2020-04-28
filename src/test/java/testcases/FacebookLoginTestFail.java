@@ -9,7 +9,7 @@ import setup.TestBase;
 public class FacebookLoginTestFail extends TestBase {
 
 	@Test(groups={"fail"})
-	public void init() throws Exception {
+	public void facebookLoginTestFail() throws Exception {
 		// driver.get("https://www.gmail.com");
 		FacebookLoginPage loginpage = PageFactory.initElements(driver, FacebookLoginPage.class);
 		loginpage.setFirstName("Anujam");

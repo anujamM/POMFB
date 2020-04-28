@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 14 01:27:10 IST 2020</td>
+<td>Started on:</td><td>Wed Apr 15 00:33:15 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38237 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (106 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>fail </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,13 +76,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcases.FacebookLoginTestFail.init()'><b>init</b><br>Test class: testcases.FacebookLoginTestFail</td>
-<td><div><pre>java.lang.Exception: Contact number error!!!
-	at pages.FacebookLoginPage.assertLoginPageErrorMsg(FacebookLoginPage.java:139)
-	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:22)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1423983012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1423983012'><pre>java.lang.Exception: Contact number error!!!
-	at pages.FacebookLoginPage.assertLoginPageErrorMsg(FacebookLoginPage.java:139)
-	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:22)
+<td><div><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at pages.FacebookLoginPage.setFirstName(FacebookLoginPage.java:59)
+	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:14)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace916419490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace916419490'><pre>java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at pages.FacebookLoginPage.setFirstName(FacebookLoginPage.java:59)
+	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,21 +119,8 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>8</td>
-<td>testcases.FacebookLoginTestFail@327471b5</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testcases.FacebookLoginTestPass.init()'><b>init</b><br>Test class: testcases.FacebookLoginTestPass</td>
-<td></td>
-<td>7</td>
-<td>testcases.FacebookLoginTestPass@4157f54e</td></tr>
+<td>0</td>
+<td>testcases.FacebookLoginTestFail@6615435c</td></tr>
 </table><p>
 </body>
 </html>

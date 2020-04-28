@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.917 s <<< FAILURE! - in TestSuite
-init(testcases.FacebookLoginTestFail)  Time elapsed: 8.724 s  <<< FAILURE!
-java.lang.Exception: Contact number error!!!
-	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:22)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.446 s <<< FAILURE! - in TestSuite
+init(testcases.FacebookLoginTestFail)  Time elapsed: 0.05 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:14)
 

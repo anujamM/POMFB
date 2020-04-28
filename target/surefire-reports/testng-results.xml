@@ -1,39 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38237" started-at="2020-04-13T19:57:10Z" finished-at="2020-04-13T19:57:49Z">
+  <suite name="Suite" duration-ms="106" started-at="2020-04-14T19:03:15Z" finished-at="2020-04-14T19:03:15Z">
     <groups>
+      <group name="fail">
+        <method signature="FacebookLoginTestFail.init()[pri:0, instance:testcases.FacebookLoginTestFail@6615435c]" name="init" class="testcases.FacebookLoginTestFail"/>
+      </group> <!-- fail -->
     </groups>
-    <test name="Test" duration-ms="38237" started-at="2020-04-13T19:57:10Z" finished-at="2020-04-13T19:57:49Z">
-      <class name="testcases.FacebookLoginTestPass">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testcases.FacebookLoginTestPass@4157f54e]" name="initialize" is-config="true" duration-ms="10460" started-at="2020-04-13T19:57:30Z" finished-at="2020-04-13T19:57:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="init()[pri:0, instance:testcases.FacebookLoginTestPass@4157f54e]" name="init" duration-ms="7824" started-at="2020-04-13T19:57:41Z" finished-at="2020-04-13T19:57:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:testcases.FacebookLoginTestPass@4157f54e]" name="TeardownTest" is-config="true" duration-ms="237" started-at="2020-04-13T19:57:48Z" finished-at="2020-04-13T19:57:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TeardownTest -->
-      </class> <!-- testcases.FacebookLoginTestPass -->
+    <test name="Test" duration-ms="106" started-at="2020-04-14T19:03:15Z" finished-at="2020-04-14T19:03:15Z">
       <class name="testcases.FacebookLoginTestFail">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:testcases.FacebookLoginTestFail@327471b5]" name="initialize" is-config="true" duration-ms="10862" started-at="2020-04-13T19:57:10Z" finished-at="2020-04-13T19:57:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="FAIL" signature="init()[pri:0, instance:testcases.FacebookLoginTestFail@327471b5]" name="init" duration-ms="8711" started-at="2020-04-13T19:57:21Z" finished-at="2020-04-13T19:57:30Z">
-          <exception class="java.lang.Exception">
-            <message>
-              <![CDATA[Contact number error!!!]]>
-            </message>
+        <test-method status="FAIL" signature="init()[pri:0, instance:testcases.FacebookLoginTestFail@6615435c]" name="init" duration-ms="40" started-at="2020-04-14T19:03:15Z" finished-at="2020-04-14T19:03:15Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.Exception: Contact number error!!!
-at pages.FacebookLoginPage.assertLoginPageErrorMsg(FacebookLoginPage.java:139)
-at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:22)
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+at pages.FacebookLoginPage.setFirstName(FacebookLoginPage.java:59)
+at testcases.FacebookLoginTestFail.init(FacebookLoginTestFail.java:14)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,14 +50,10 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Exception -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:testcases.FacebookLoginTestFail@327471b5]" name="TeardownTest" is-config="true" duration-ms="91" started-at="2020-04-13T19:57:30Z" finished-at="2020-04-13T19:57:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TeardownTest -->
       </class> <!-- testcases.FacebookLoginTestFail -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

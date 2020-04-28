@@ -2,12 +2,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
   <test thread-count="5" verbose="0" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="fail"/>
+        <include name="fail"/>
+      </run>
+    </groups>
     <classes>
       <class name="testcases.FacebookLoginTestFail">
         <methods>
-          <include name="TeardownTest"/>
           <include name="init"/>
-          <include name="initialize"/>
         </methods>
       </class> <!-- testcases.FacebookLoginTestFail -->
     </classes>

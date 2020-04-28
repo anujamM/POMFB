@@ -1,4 +1,4 @@
-package testcases;
+package setup;
 
 import java.io.IOException;
 import java.net.URL;

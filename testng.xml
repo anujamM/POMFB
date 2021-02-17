@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test name="Test">
     <!-- <classes>
-      <class name="testcases.FacebookLoginTestFail"/>
       <class name="testcases.FacebookLoginTestPass"/>
     </classes> -->
     <packages>

@@ -10,7 +10,6 @@ public class FacebookLoginTestPass extends TestBase {
 
 	@Test(groups={"pass"})
 	public void facebookLoginTestPass() throws Exception {
-		// driver.get("https://www.gmail.com");
 		FacebookLoginPage loginpage = PageFactory.initElements(driver, FacebookLoginPage.class);
 		loginpage.setFirstName("Anujam");
 		loginpage.setLastName("Mandal");

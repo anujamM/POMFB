@@ -6,4 +6,15 @@
       <class name="testcases.FacebookLoginTestPass"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testcases.FacebookLoginTestPass">
+        <methods>
+          <include name="initialize"/>
+          <include name="facebookLoginTestPass"/>
+          <include name="TeardownTest"/>
+        </methods>
+      </class> <!-- testcases.FacebookLoginTestPass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

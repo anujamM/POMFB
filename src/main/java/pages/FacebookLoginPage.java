@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -15,8 +16,11 @@ public class FacebookLoginPage {
 
 	// Using FindBy for locating elements
 	// @FindBy(how = How.XPATH, using = "//input[contains(@name, 'firstname')]]")
-	@FindBy(xpath = "//input[contains(@name, 'firstname')]")
-	WebElement firstNameTextBox;
+	
+//	@FindBy(xpath = "//input[contains(@name, 'firstname')]")
+//	WebElement firstNameTextBox;
+	
+	By firstNameTextBox = By.xpath("//input[contains(@name, 'firstname')]");
 
 	@FindBy(xpath = "//input[contains(@name, 'lastname')]")
 	WebElement lastNameTextBox;
@@ -56,7 +60,7 @@ public class FacebookLoginPage {
 
 	// This method is to set Email in the email text box
 	public void setFirstName(String strFirstName) {
-		firstNameTextBox.sendKeys(strFirstName);
+		((WebElement) firstNameTextBox).sendKeys(strFirstName);
 	}
 
 	public void setLastName(String strLastName) {
